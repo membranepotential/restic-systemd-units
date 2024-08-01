@@ -1,0 +1,9 @@
+[Unit]
+Description=@schedule@ restic @service@ of %i
+
+[Timer]
+OnCalendar=@schedule@
+Unit=restic-@service@@%i.service
+
+[Install]
+WantedBy=timers.target

@@ -1,3 +1,5 @@
+build
+
 restic-*@.timer
 restic-*@.service
 restic
