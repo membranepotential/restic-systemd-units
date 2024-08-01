@@ -50,7 +50,7 @@ restic-%@.service: restic-%@.service.in
 
 all: $(UNITS)
 
-install: install-restic install-units install-libexec install-bin
+install: install-restic install-tmpfiles install-units install-libexec install-bin
 
 restic:
 	curl -fL -o $(RESTIC_USER).bz2 https://github.com/restic/restic/releases/download/v$(RESTIC_RELEASE)/restic_$(RESTIC_RELEASE)_linux_amd64.bz2
